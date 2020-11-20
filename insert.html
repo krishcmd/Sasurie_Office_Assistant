@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insert Page</title>
+  <style type="text/css">
+
+    input[type=text],select {
+                              width: 30%;
+                              padding: 8px;
+                              margin: 8px;
+                              display:block;
+                              border: 1px solid #ccc;
+                              border-radius: 4px;
+                              box-sizing: border-box;
+                            }
+    input[type=Number], select {
+                              width: 30%;
+                              padding: 8px;
+                              margin: 8px;
+                              display:block;
+                              border: 1px solid #ccc;
+                              border-radius: 4px;
+                              box-sizing: border-box;
+                            }
+      h4{
+        line-height: 0px;
+        padding: 0px;
+      }
+      h2{
+        text-align: center;
+      }
+      .container{
+         border-radius: 5px;
+         background-color: lightblue;
+         padding: 5px;  
+         width: 50%;
+         float: left;
+         line-height: 2px;
+      }
+      input[type=submit] {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 14px 20px;
+                        margin: 8px 0;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        width: 50%;
+                      }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#div1{
+  width: 40%;
+  border-radius: 5px;
+  float: right;
+  display: none;
+  background-color: lightblue;
+  padding: 5px;
+  line-height: 0px;
+
+}
+#div2{
+   width: 40%;
+  border-radius: 5px;
+  float: right;
+  display: none;
+  background-color: lightblue;
+  padding: 5px;
+  line-height: 0px;
+}
+  </style>
+  <script type="text/javascript">
+  function show1() {
+    if (document.getElementById("dayscholar").checked) {
+        document.getElementById("div1").style.display="block";
+        document.getElementById("div2").style.display="none";
+    }else if(document.getElementById("hosteler").checked){
+      document.getElementById("div2").style.display="block";
+      document.getElementById("div1").style.display="none";
+    }
+    else document.getElementById("div1").style.display="none";
+
+}
+
+  </script>
+</head>
+<body>
+  <h1 style="color:#45a049;text-align: center;">Sasurie College of Engineering</h1>
+<form id="insform" action="#">
+  <div class="container">
+    <h4>Register Number:</h4><input type="text" name="regno" required=""><br>
+    <h4>Student Name:</h4><input type="text" name="stuname" required=""><br>
+    <h4>Year:</h4><input type="text" name="year" required=""><br>
+    <h4>Department:</h4><input type="text" name="dept" required=""><br>
+    <h4>Shelter Type:</h4> 
+    <input type="radio" name="shelter" id="dayscholar" value="dayscholar" required="" onclick="show1()">
+    <label for="dayscholar">DayScholar <br><br><br><br><br>
+    <input type="radio" name="shelter" id="hosteler" value="hosteler" onclick="show1()">
+    <label for="hosteler">Hosteler<br>          
+  </div>
+  <div id="div1">
+    <h2>DayScholar</h2>
+    <h4>Tution Fee</h4><input type="Number" name="regno" required=""><br>
+    <h4>Bus Fee</h4><input type="Number" name="stuname" required=""><br>
+    <h4>Assosciation Fee</h4><input type="Number" name="year" required=""><br>
+    <h4 contenteditable="true">Other fee</h4><input type="Number" name="dept" required=""><br>
+  </div>
+  <div id="div2">
+    <h2>Hosteler</h2>
+    <h4>Tution Fee</h4><input type="Number" name="regno" required=""><br>
+    <h4>Hostel Rent</h4><input type="Number" name="stuname" required=""><br>
+    <h4>Mess Fee</h4><input type="Number" name="messfee" required=""><br>
+    <h4>Assosciation Fee</h4><input type="Number" name="afee" required=""><br>
+    <h4 contenteditable="true">Other fee</h4><input type="Number" name="dept" required=""><br>
+  </div><br>  
+  <div style="margin-top: 500px;">
+   <center><input type="submit" name="submit" value="Save"> </center>
+ </div>
+</form>
+</body>
+</html>

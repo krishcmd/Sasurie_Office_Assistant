@@ -1,0 +1,136 @@
+body {font-family: Arial;}
+
+* {
+  box-sizing: border-box;
+  
+}
+h2{
+  text-align: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc; 
+  width: 100%;
+  padding: 2%;
+  }
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  line-height: 50px;
+}
+input{
+  padding: 5px;
+  font-size: 14px;
+  width:100%
+  margin-left: 10px;
+
+}
+label{
+  display: inline-block;
+  width: 500px;
+  text-align: right;
+  vertical-align: middle;
+  margin-left: -50px;
+}
+
+
+select{
+  padding: 6px;
+  font-size: 14px;
+  margin-left: 10px;
+  width: 50%;
+}
+textarea{
+    position: relative;
+    margin-left: 10px;
+    width: 50%;
+    height: 80px;
+    vertical-align: top;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+#btn{
+    margin-left:-100px;
+  }
+  #label
+  {
+    margin-left:-20%;
+  }
+  #label1{
+margin-left: 40%;
+  }
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+.b1{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    border: 1px;
+    appearance: button;
+    text-decoration: none;
+    color: green;
+}
+input[type="submit"]{
+  width: 40px;
+  border-radius: 0px;
+  background-color: green;
+}
+
+input[type="button"]{
+  width: 40px;
+  border-radius: 0px;
+  background-color: green;
+}

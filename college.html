@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CollegeAc</title>
+</head>
+<body >
+	<div style="float: left">
+	<h2>Receipt details</h2>
+<form action="clgfee.php" method="post">	
+	<table border="1" width="450px" bgcolor="lightgreen">
+		<tr>
+			<th>1.Name of the Student</th>
+			<td><input type="text" name="nots"></td>
+		</tr>
+		<tr>
+			<th>2.University Reg No:</th>
+			<td><input type="text" name="ureg"></td>
+		</tr>
+		<tr>
+			<th>3.Receipt No:</th>
+			<td><input type="text" name="rno"></td>
+		</tr>
+		<tr>
+			<th>4.Date:</th>
+			<td><input type="date" name="date"></td>
+		</tr>
+		<tr>
+			<th>5.Total Amnt:</th>
+			<td><input type="text" name="tamt"></td>
+		</tr>
+		<tr>
+			<th>6.Amount in words:</th>
+			<td><input type="text" name="amw"></td>
+		</tr>
+		
+		<tr>
+			<th>7.Type:</th>
+			<td> <select type="text" name="tpe">
+               <option value="Cash">Cash</option>
+               <option value="DD">DD</option>
+               <option value="card">Card</option></select>
+		</tr>
+		<tr>
+			<th>8.Type of Receipt:</th>
+			<td><select type="text" name="trpe">
+              <option value="Student">Student</option>
+              <option value="Staff">Staff</option></select></td>
+		</tr>
+		<tr>
+			<th>9.Branch:</th>
+			<td><select type="text" name="bnh">
+              <option value="cse">Computer Science and Engineering</option>
+              <option value="ece">Electronic and Communication Engineering</option>
+              <option value="eee">Electrical and Electronic Engineering</option>
+              <option value="mech">Mechanical Engineering</option>
+             <option value="civil">Civil Engineering</option>
+        </select></td>
+		</tr>
+		<tr>
+			<th>10.year:</th>
+			<td><select type="text" name="bnhy">
+              <option value="year1">I</option>
+              <option value="year2">II</option>
+              <option value="year3">III</option>
+              <option value="year4">IV</option>
+           </select></td>
+		</tr>
+		<tr>
+			<th>11.Bank Name:</th>
+			<td><input type="text" name="bname"></td>
+		</tr>
+		<tr>
+			<th>12.DD No</th>
+			<td><input type="text" name="ddn"></td>
+		</tr>
+		<tr>
+			<th>13.DD Date</th>
+			<td><input type="date" name="dddate"></td>
+		</tr>
+	</table>
+    <div style="margin-left: 500px;margin-top: -500px">
+    	<br><br>
+    <h2>&nbsp;College A/C</h2>
+	<table border="1" width="450px" bgcolor="lightgreen">
+		<tr>
+			<th>1.Admission fee</th>
+			<td><input type="text" name="admfee"></td>
+		</tr>
+
+		<tr>
+			<th>2.Tution fee</th>
+			<td><input type="text" name="tfee"></td>
+		</tr>
+
+		<tr>
+			<th>3.lib/sports/unit Test fee:</th>
+			<td><input type="lsufee" name="tamt"></td>
+
+	    </tr>
+
+	    <tr>
+	    	<th>4.University sports fee:</th>
+	    	<td><input type="usfee" name="usfee"></td>
+	    </tr>
+
+	 
+	    	<th>5.<label contenteditable="true">Other fee:</label></th>
+	    	<td><input type="text" name="ofee1"></td>
+	    </tr>
+
+
+
+</table>
+</div>
+
+ <div class="btn-group" style="line-height: 60px;margin-left: 500px;">
+        <input type="button" value="Print"></input>
+        <input type="submit" value="save" onsubmit=""></input>
+        
+    </div>
+</div>
+	</form>
+</body>
+<style type="text/css">
+	th{
+		text-align: left;
+		padding: 4px;
+	}
+</style>
+</html>

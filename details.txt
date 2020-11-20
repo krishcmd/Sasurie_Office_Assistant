@@ -1,0 +1,6 @@
+DB=sasuriefee
+day_scholar
+hostelites
+dsfeepay_history
+hsfeepay_history
+otherfee

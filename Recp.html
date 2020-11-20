@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SasFee</title>
+	<style>
+		body{
+			 
+	    /*background-color: #00FF7F;*/
+		}
+		*{
+			margin: 0px;
+			padding: 0px;
+
+		}
+		a{
+			color: white;
+		}
+		#container ul{
+			list-style: none;
+		}
+		#container ul li{
+			background-color: green;
+			width: 150px;
+			border: 1px solid white;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			color: white;
+			font-size: 18px;
+		}
+		#container ul li:hover{
+			background-color: #388222;
+		}
+		#container ul ul{
+			display: none;
+		}
+		#container ul li:hover > ul{
+			display: block;
+		}
+		iframe {
+  					box-sizing: border-box;   /* make the border size be included in the height */
+  					display: block;           /* make them block to fix white space margin */
+  					width: 100%;
+  					height: 900px;
+				}
+	</style>
+	<script type="text/javascript">
+		function changeFrame(ida) {
+			if(ida==="id1"){
+				document.getElementById("mainframe").src="college.html";
+			}
+			if(ida==="id2"){
+				document.getElementById("mainframe").src="Hostel.html";
+			}
+			if(ida==="id3"){
+				document.getElementById("mainframe").src="bus.html";
+			}
+			if(ida==="id4"){
+				document.getElementById("mainframe").src="Stores.html";
+			}
+			if(ida==="id5"){
+				document.getElementById("mainframe").src="Exam.html";
+			}
+			if(ida==="id6"){
+				document.getElementById("mainframe").src="others.html";
+			}
+			if(ida==="id7"){
+				location.replace("home.html");
+			}
+			}
+	</script>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li><a href="#" id="id1" onclick="changeFrame(this.id)" style="text-decoration: none;">College A/c</a></li>
+			<li><a href="#" id="id2" onclick="changeFrame(this.id)" style="text-decoration: none;">Hostel A/c</a></li>
+			<li><a href="#" id="id3" onclick="changeFrame(this.id)" style="text-decoration: none;">Bus A/c</a></li>
+			<li><a href="#" id="id4" onclick="changeFrame(this.id)" style="text-decoration: none;">Stores A/c</a></li>
+			<li><a href="#" id="id5" onclick="changeFrame(this.id)" style="text-decoration: none;">Exam A/c</a></li>
+			<li><a href="#" id="id6" onclick="changeFrame(this.id)" style="text-decoration: none;">Others A/c</a></li>
+			<li><a href="#" id="id7" onclick="changeFrame(this.id)" style="text-decoration: none;">Home</a></li>
+		</ul>
+	</div>
+	<div class="container"><br><br>
+		<iframe src="" id="mainframe"></iframe>
+	</div>
+
+
+</body>
+</html>			 	 	
